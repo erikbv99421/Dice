@@ -21,3 +21,20 @@ extension UIButton {
   }
   
 }
+
+extension UIImageView {
+  
+  func shake() {
+    
+    let shake = CABasicAnimation(keyPath: "transform.rotation")
+    shake.duration = 0.25
+    shake.repeatCount = 3
+    shake.autoreverses = true
+
+    shake.fromValue = 0.0
+    shake.toValue = 2 * Double.pi
+  
+    layer.add(shake, forKey: nil)
+  }
+  
+}

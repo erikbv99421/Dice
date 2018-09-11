@@ -22,7 +22,7 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    updateDiceImages()
+    //updateDiceImages()
     gradient()
   }
 
@@ -41,8 +41,10 @@ class ViewController: UIViewController {
   }
   
   func updateDiceImages() {
+    shakeDices()
     diceImageView1.image = UIImage(named: "dice\(randomIndex())")
     diceImageView2.image = UIImage(named: "dice\(randomIndex())")
+    
   }
   
   override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
@@ -58,6 +60,13 @@ class ViewController: UIViewController {
   
   func pulseButtonAnimation(_ sender: UIButton) {
     sender.pulsate()
+  }
+  
+  func shakeDices() {
+    diceImageView1.image = UIImage(named: "unknown")
+    diceImageView2.image = UIImage(named: "unknown")
+    diceImageView1.shake()
+    diceImageView2.shake()
   }
 }
 
