@@ -29,14 +29,16 @@ class ViewController: UIViewController {
   }
 
   @IBAction func rollButtonPressed(_ sender: UIButton) {
-    
-    diceImageView1.image = UIImage(named: "dice\(randomIndex())")
-    diceImageView2.image = UIImage(named: "dice\(randomIndex())")
-    
+    updateDiceImages()
   }
   
   func randomIndex() -> Int {
     return fixRandom + Int(arc4random_uniform(UInt32(maxDiceNum)))
+  }
+  
+  func updateDiceImages() {
+    diceImageView1.image = UIImage(named: "dice\(randomIndex())")
+    diceImageView2.image = UIImage(named: "dice\(randomIndex())")
   }
   
 }
