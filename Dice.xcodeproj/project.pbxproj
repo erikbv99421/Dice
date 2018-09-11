@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		852C2F632147F21B004B8C30 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852C2F622147F21B004B8C30 /* Animations.swift */; };
 		856432212146906900AFAE5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856432202146906900AFAE5D /* AppDelegate.swift */; };
 		856432232146906900AFAE5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856432222146906900AFAE5D /* ViewController.swift */; };
 		856432262146906900AFAE5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856432242146906900AFAE5D /* Main.storyboard */; };
 		856432282146906A00AFAE5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856432272146906A00AFAE5D /* Assets.xcassets */; };
 		8564322B2146906A00AFAE5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856432292146906A00AFAE5D /* LaunchScreen.storyboard */; };
+		856432332147DB8000AFAE5D /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856432322147DB8000AFAE5D /* Gradient.swift */; };
+		8564323C2147E2E800AFAE5D /* Playball-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8564323B2147E2E800AFAE5D /* Playball-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		852C2F622147F21B004B8C30 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		8564321D2146906900AFAE5D /* Dice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		856432202146906900AFAE5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		856432222146906900AFAE5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		856432272146906A00AFAE5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8564322A2146906A00AFAE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8564322C2146906A00AFAE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		856432322147DB8000AFAE5D /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		8564323B2147E2E800AFAE5D /* Playball-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Playball-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,7 @@
 		856432142146906900AFAE5D = {
 			isa = PBXGroup;
 			children = (
+				8564323A2147E2B400AFAE5D /* Fonts */,
 				8564321F2146906900AFAE5D /* Dice */,
 				8564321E2146906900AFAE5D /* Products */,
 			);
@@ -54,14 +61,24 @@
 		8564321F2146906900AFAE5D /* Dice */ = {
 			isa = PBXGroup;
 			children = (
+				852C2F622147F21B004B8C30 /* Animations.swift */,
 				856432202146906900AFAE5D /* AppDelegate.swift */,
 				856432222146906900AFAE5D /* ViewController.swift */,
 				856432242146906900AFAE5D /* Main.storyboard */,
+				856432322147DB8000AFAE5D /* Gradient.swift */,
 				856432272146906A00AFAE5D /* Assets.xcassets */,
 				856432292146906A00AFAE5D /* LaunchScreen.storyboard */,
 				8564322C2146906A00AFAE5D /* Info.plist */,
 			);
 			path = Dice;
+			sourceTree = "<group>";
+		};
+		8564323A2147E2B400AFAE5D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8564323B2147E2E800AFAE5D /* Playball-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8564323C2147E2E800AFAE5D /* Playball-Regular.ttf in Resources */,
 				8564322B2146906A00AFAE5D /* LaunchScreen.storyboard in Resources */,
 				856432282146906A00AFAE5D /* Assets.xcassets in Resources */,
 				856432262146906900AFAE5D /* Main.storyboard in Resources */,
@@ -137,6 +155,8 @@
 			files = (
 				856432232146906900AFAE5D /* ViewController.swift in Sources */,
 				856432212146906900AFAE5D /* AppDelegate.swift in Sources */,
+				856432332147DB8000AFAE5D /* Gradient.swift in Sources */,
+				852C2F632147F21B004B8C30 /* Animations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
